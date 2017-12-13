@@ -1,0 +1,11 @@
+[Unit]
+Description=Kill UPnP service
+
+[Service]
+Type=oneshot
+RemainAfterExit=false
+ExecStart=/bin/true
+ExecStop=killall ushare
+
+[Install]
+WantedBy=multi-user.target

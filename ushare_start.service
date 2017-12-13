@@ -1,0 +1,10 @@
+[Unit]
+Description=Start UPnP service
+
+[Service]
+Type=simple
+RemainAfterExit=false
+ExecStart=/usr/bin/ushare
+
+[Install]
+WantedBy=multi-user.target
